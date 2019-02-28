@@ -1,5 +1,7 @@
 package sumador;
 
+import static org.junit.Assert.assertEquals;
+
 public class ASumar {
 
 	private String valor_inicial;
@@ -17,8 +19,9 @@ public class ASumar {
 	        String numero = valor_inicial;
 	        if (numero.length() == 1) {
 	            return (numero + " = " + numero);
-	        }
-			return null; 
+	        } else if (Integer.parseInt(numero) < 0){
+			return (""); }
+			return numero;
 	}		
 
 }
