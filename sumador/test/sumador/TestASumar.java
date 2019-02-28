@@ -6,9 +6,14 @@ import org.junit.jupiter.api.Test;
 
 class TestASumar {
 
+	/**
+	 * comprueba si 5 es igual a 5 = 5
+	 */
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	 public void testUnaCifra() {
+		        ASumar sumi = new ASumar("5");
+		        String resultado = sumi.mostrar();
+		        assertEquals("5 = 5",resultado );
+		    }
 	}
 
-}
